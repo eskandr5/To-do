@@ -1,16 +1,54 @@
-# React + Vite
+# ✅ Todo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful and functional Todo List application built with React.js. Manage your tasks efficiently with a clean and intuitive interface.
 
-Currently, two official plugins are available:
+![Todo App Screenshot](./screenshots/todo-app-main.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Create Tasks** - Add new tasks to your todo list
+- **Complete Tasks** - Mark tasks as completed with a single click
+- **Delete Tasks** - Remove tasks you no longer need (with confirmation modal)
+- **Filter Tasks** - View all, active, or completed tasks
+- **Task Statistics** - See how many tasks are left to complete
+- **Clear Completed** - Remove all completed tasks at once
+- **Persistent Storage** - Tasks are saved in your browser's localStorage
+- **Responsive Design** - Works perfectly on all devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🖼️ Screenshots
 
-## Expanding the ESLint configuration
+### Main Interface
+![Main Interface](./screenshots/todo-app-main.png)
+*The main todo list interface with all features*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Adding a Task
+![Add Task](./screenshots/todo-add-task.png)
+*Easy task creation with a simple input field*
+
+### Task Completion
+![Completed Tasks](./screenshots/todo-completed.png)
+*Visual indication of completed tasks*
+
+### Delete Confirmation
+![Delete Modal](./screenshots/todo-delete-modal.png)
+*Safe deletion with confirmation modal*
+
+### Filtering Tasks
+![Task Filters](./screenshots/todo-filters.png)
+*Filter tasks by status (All/Active/Completed)*
+
+### Empty State
+![Empty State](./screenshots/todo-empty.png)
+*Clean empty state when no tasks exist*
+
+## 🚀 Live Demo
+
+Check out the live demo: [Todo App Demo](https://eskandr5.github.io/To-do/)
+
+## 🛠️ Technologies Used
+
+- **React.js** - Frontend library
+- **CSS3** - Styling and animations
+- **localStorage** - Client-side data persistence
+- **React Hooks** (useState, useEffect) - State management
+
