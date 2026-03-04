@@ -1,0 +1,213 @@
+.todo-app {
+    width: 450px;
+    margin: 40px auto;
+    font-family: sans-serif;
+    background-color: rgba(158, 132, 229, 0.233);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #6c1ab5c2;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.todo-input {
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+    padding: 12px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.todo-input:focus {
+    outline: 2px solid #8a41df;
+    outline-offset: 2px;
+}
+
+.AddButton {
+    padding: 12px 20px;
+    border: none;
+    background-color: rgb(138, 65, 223);
+    border-radius: 10px;
+    margin-left: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.AddButton:hover {
+    background-color: #7935c9;
+}
+
+.AddButton:active {
+    transform: scale(0.98);
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-checkbox {
+    margin-right: 12px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #10b981;
+}
+
+.todo-text {
+    flex: 1;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    color: #260246c2;
+    font-size: 1rem;
+    transition: color 0.2s;
+    max-width: 250px;
+}
+
+.todo-text.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.DeleteButton {
+    padding: 8px 16px;
+    border: none;
+    background-color: rgb(226, 43, 67);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-left: 8px;
+}
+
+.DeleteButton:hover {
+    background-color: #c41e3a;
+}
+
+.DeleteButton:active {
+    transform: scale(0.95);
+}
+
+.todo-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    color: #4a5568;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(108, 26, 181, 0.2);
+    border-bottom: 1px solid rgba(108, 26, 181, 0.2);
+    margin-bottom: 16px;
+}
+
+.clear-completed {
+    background: none;
+    border: 1px solid #e2e8f0;
+    color: #e43b5b;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.clear-completed:hover {
+    background: #fee2e2;
+    border-color: #e43b5b;
+    color: #c41e3a;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0 10px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex: 1;
+    max-width: 120px;
+}
+
+.filters button:hover {
+    background-color: #8a41df;
+    transform: translateY(-2px);
+}
+
+.filters button.active {
+    background-color: #4a1a7a;
+    box-shadow: 0 2px 8px rgba(108, 26, 181, 0.4);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c1ab5c2;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.todo-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+    background: rgba(158, 132, 229, 0.1);
+    border-radius: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+    background: rgba(108, 26, 181, 0.3);
+    border-radius: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(108, 26, 181, 0.5);
+}
