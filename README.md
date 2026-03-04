@@ -19,26 +19,32 @@ A beautiful and functional Todo List application built with React.js. Manage you
 
 ### Main Interface
 ![Main Interface](./screenshots/todo-app-main.png)
+
 *The main todo list interface with all features*
 
 ### Adding a Task
 ![Add Task](./screenshots/todo-add-task.png)
+
 *Easy task creation with a simple input field*
 
 ### Task Completion
 ![Completed Tasks](./screenshots/todo-completed.png)
+
 *Visual indication of completed tasks*
 
 ### Delete Confirmation
 ![Delete Modal](./screenshots/todo-delete-modal.png)
+
 *Safe deletion with confirmation modal*
 
 ### Filtering Tasks
 ![Task Filters](./screenshots/todo-filters.png)
+
 *Filter tasks by status (All/Active/Completed)*
 
 ### Empty State
 ![Empty State](./screenshots/todo-empty.png)
+
 *Clean empty state when no tasks exist*
 
 ## 🚀 Live Demo
